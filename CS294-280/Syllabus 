@@ -12,5 +12,4 @@ Large language model (LLM) agents have been an important frontier in AI, however
 ## Syllabus
 | Week | Lecture | Supplemental Readings |
 |---|---|---|
-|Week 0| Inference-Time Techniques for LLM Reasoning
-Xinyun Chen, Google DeepMind | https://github.com/MIG217/Agents/blob/main/CS294-280/Week0/2309.03409v3.pdf | 
+|Week 0| Inference-Time Techniques for LLM Reasoning Xinyun Chen, Google DeepMind | https://github.com/MIG217/Agents/blob/main/CS294-280/Week0/2309.03409v3.pdf | 
