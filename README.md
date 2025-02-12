@@ -24,5 +24,5 @@
 ## Mooc
 1. UC Berkeley CS294/194-196 Large Language Model Agents： [CS294/194-196 Large Language Model Agents](https://rdi.berkeley.edu/llm-agents/f24)
 2. UC Berkeley CS294/194-280 Advanced Large Language Model Agents: https://rdi.berkeley.edu/adv-llm-agents/sp25
-3. DeepLearning.AI Multi AI Agent Systems with crewAI: https://learn.deeplearning.ai/courses/multi-ai-agent-systems-with-crewai/lesson/wwou5/introduction?_gl=1*1majtt1*_ga*MTczNzc5NjU3My4xNzMzNDQ2MTY2*_ga_PZF1GBS1R1*MTczMzQ0NjE2Ni4xLjAuMTczMzQ0NjE4Ni40MC4wLjA.
+3. DeepLearning.AI Multi AI Agent Systems with crewAI: [ https://learn.deeplearning.ai/courses/multi-ai-agent-systems-with-crewai/lesson/wwou5/introduction?_gl=1*1majtt1*_ga*MTczNzc5NjU3My4xNzMzNDQ2MTY2*_ga_PZF1GBS1R1*MTczMzQ0NjE2Ni4xLjAuMTczMzQ0NjE4Ni40MC4wLjA.](https://learn.deeplearning.ai/courses/multi-ai-agent-systems-with-crewai)
 4. 
