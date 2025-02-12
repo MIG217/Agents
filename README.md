@@ -20,9 +20,24 @@
 2. 
 
 ## Agent平台
+1. Dify: https://cloud.dify.ai/apps
+2. Microsoft Copilot Studio: https://copilotstudio.microsoft.com/
 
 ## Mooc
 1. UC Berkeley CS294/194-196 Large Language Model Agents： [CS294/194-196 Large Language Model Agents](https://rdi.berkeley.edu/llm-agents/f24)
 2. UC Berkeley CS294/194-280 Advanced Large Language Model Agents: https://rdi.berkeley.edu/adv-llm-agents/sp25
 3. DeepLearning.AI Multi AI Agent Systems with crewAI: https://learn.deeplearning.ai/courses/multi-ai-agent-systems-with-crewai
-4. 
+
+## Agent应用
+1. Google (看不到编排)
+   **Data Science Agent:**
+   - An experiment to build an AI generated Colab notebook that handles data cleaning, data exploration, plotting, Q&A on data, and predictive modeling.
+   - https://labs.google.com/code/dsa
+
+   **Transformation Agent:**
+   - An experimental model capability to edit existing Python code, taking as input code context with a text prompt, and turning it into a code diff.
+   - https://labs.google.com/code/transformer
+
+   **Jules:**  
+   - An experimental AI coding agent that works asynchronously. Jules breaks down tasks and writes code that can be merged directly into your GitHub repo.
+   - https://labs.google.com/jules/
