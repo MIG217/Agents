@@ -4,6 +4,9 @@
 1. AI Agent（智能体）技术白皮书（Google，2024）
    - 中文：https://arthurchiao.art/blog/ai-agent-white-paper-zh/
    - 英文：https://github.com/MIG217/Agents/blob/main/Whitepaper/Newwhitepaper_Agents2.pdf
+2. Building effective agents (Anthropic, 2024)
+   - 中文：https://arthurchiao.art/blog/build-effective-ai-agent-zh/
+   - 英文：https://www.anthropic.com/research/building-effective-agents
 
 ## Blog
 1. Jason Brownlee创建，侧重机器学习、深度学习和DS；Python； https://machinelearningmastery.com/
