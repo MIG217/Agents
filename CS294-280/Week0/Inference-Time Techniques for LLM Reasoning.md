@@ -52,6 +52,12 @@ Prompt the LLM to **first recall relevant exemplars**, before solving the test p
 - Evaluator: the LLM to evaluate the accuracy of an instruction
 <img width="680" alt="image" src="https://github.com/user-attachments/assets/dd220e53-c0f6-48d6-b488-9634534d3745" />
 
+### Least-to-most prompting
+- SCAN 是一个用于评估组合泛化能力的基准，它模拟了如何通过有限的训练数据学习并推理新的指令组合
+<img width="905" alt="image" src="https://github.com/user-attachments/assets/7a3a5b58-92d1-4bff-a5eb-40829ecc96c4" />
+
+
+
 #### Example meta-prompt for GSM8K:
 <img width="810" alt="image" src="https://github.com/user-attachments/assets/a8977329-cc41-4561-a40b-31f9b8e7d866" />
 
@@ -78,10 +84,12 @@ Prompt the LLM to **first recall relevant exemplars**, before solving the test p
 4. 工具的防呆（Poka-yoke）。
 
 ## 相关Paper
-Large Language Models Are Human-Level Prompt Engineers： https://arxiv.org/abs/2211.01910
-Large Language Models as Optimizers：https://arxiv.org/abs/2309.03409
+> Large Language Models Are Human-Level Prompt Engineers： https://arxiv.org/abs/2211.01910
+> 
+> Large Language Models as Optimizers：https://arxiv.org/abs/2309.03409  
 
-Wei et al., Chain-of-Thought Prompting Elicits Reasoning in Large Language Models, NeurIPS 2022. 
-Wei et al., Emergent Abilities of Large Language Models, TMLR 2022.
+> Wei et al., Chain-of-Thought Prompting Elicits Reasoning in Large Language Models, NeurIPS 2022.
+> 
+> Wei et al., Emergent Abilities of Large Language Models, TMLR 2022.  
 
 
