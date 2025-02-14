@@ -21,11 +21,16 @@
 
 ## Datasets
 1. GitHub 资源合集，收集了各类 公开可用的数据集；https://github.com/smuthubabu/awesome-public-datasets
-2. 
+2. AWS提供的开放数据存储平台; https://registry.opendata.aws/
+3. 全球开放数据门户的集合: https://dataportals.org/search
+4. 欧洲各国和地区发布的开放数据集: https://opendatamonitor.eu/frontend/web/index.php?r=datacatalogue%2Flist&page=1&per-page=10
 
 ## Agent平台
 1. Dify: https://cloud.dify.ai/apps
 2. Microsoft Copilot Studio: https://copilotstudio.microsoft.com/
+3. IBM watsonx.ai https://www.ibm.com/products/watsonx-ai/ai-agent-development
+4. FastGPT https://cloud.tryfastgpt.ai/app/list
+5. coze 
 
 ## Mooc
 1. UC Berkeley CS294/194-196 Large Language Model Agents： [CS294/194-196 Large Language Model Agents](https://rdi.berkeley.edu/llm-agents/f24)
