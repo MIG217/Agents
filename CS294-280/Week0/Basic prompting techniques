@@ -8,13 +8,13 @@
    3.2 LLM as the optimizer to iteratively improve the prompt 
 
 
-## Trigger the LLM to generate long chain-of-thought (CoT) 
+## 1. Trigger the LLM to generate long chain-of-thought (CoT) 
 - **Few-shot CoT prompting** 
 - **Instruction prompting**
 - Instruction tuning
 - Reinforcement learning
 
-## Chain-of-thought prompting
+## 2. Chain-of-thought prompting
 - Chain-of-thought prompting: <mark>variable computation</mark> of the thought process adapting to tasks of different difficulty levels
   - More complex questions -> more reasoning steps in the chain-of-thought
 
