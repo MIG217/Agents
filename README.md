@@ -19,7 +19,7 @@
 3. Rob J. Hyndman 维护，侧重时间序列；https://robjhyndman.com/hyndsight/
 4. `caret` R 包的官方文档；https://topepo.github.io/caret/
 
-## Datesets
+## Datasets
 1. GitHub 资源合集，收集了各类 公开可用的数据集；https://github.com/smuthubabu/awesome-public-datasets
 2. 
 
@@ -46,3 +46,7 @@
    **Jules:**  
    - An experimental AI coding agent that works asynchronously. Jules breaks down tasks and writes code that can be merged directly into your GitHub repo.
    - https://labs.google.com/jules/
+
+## Prompt Engineering 
+1. [OpenAI Cookbook](https://github.com/openai/openai-cookbook)有许多关于如何有效利用 LLM 的深入示例。
+2. [提示词工程指南](https://github.com/dair-ai/Prompt-Engineering-Guide)库包含有关prompt工程的相当全面的教育材料集合。
