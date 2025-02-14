@@ -1,14 +1,14 @@
 # Basic prompting techniques
 
 **Catelog**   
-- [1. Trigger the LLM to generate long chain-of-thought (CoT)](#trigger-the-llm-to-generate-long-chain-of-thought-cot)
-- [2. Chain-of-thought prompting](#chain-of-thought-prompting)
-- [3. Basic prompting techniques](#basic-prompting-techniques)
-   - [3.1 Zero-shot CoT](#zero-shot-cot)   
-   - [3.2 LLM as the optimizer to iteratively improve the prompt](#llm-as-the-optimizer-to-iteratively-improve-the-prompt)
-   - [3.3 Least-to-most prompting](#least-to-most-prompting)
-   - [3.4 Self-Discover: instruct the LLM to compose reasoning structures for each task](#self-discover-instruct-the-llm-to-compose-reasoning-structures-for-each-task)
-- [4. Summary](#summary)
+1. [Trigger the LLM to generate long chain-of-thought (CoT)](#trigger-the-llm-to-generate-long-chain-of-thought-cot)
+2. [Chain-of-thought prompting](#chain-of-thought-prompting)
+3. [Basic prompting techniques](#basic-prompting-techniques)  
+   3.1 [Zero-shot CoT](#zero-shot-cot)   
+   3.2 [LLM as the optimizer to iteratively improve the prompt](#llm-as-the-optimizer-to-iteratively-improve-the-prompt)  
+   3.3 [Least-to-most prompting](#least-to-most-prompting)  
+   3.4 [Self-Discover: instruct the LLM to compose reasoning structures for each task](#self-discover-instruct-the-llm-to-compose-reasoning-structures-for-each-task)  
+4. [Summary](#summary)
 
 ## 1. Trigger the LLM to generate long chain-of-thought (CoT) 
 - **Few-shot CoT prompting** 
