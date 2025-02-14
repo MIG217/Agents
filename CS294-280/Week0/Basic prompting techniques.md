@@ -7,7 +7,7 @@
    - [3.1 Zero-shot CoT](#zero-shot-cot)   
    - [3.2 LLM as the optimizer to iteratively improve the prompt](#llm-as-the-optimizer-to-iteratively-improve-the-prompt)
    - [3.3 Least-to-most prompting](#least-to-most-prompting)
-   - [3.4 Self-Discover: instruct the LLM to compose reasoning structures for each task](#self-discover:-instruct-the-llm-to-compose-reasoning-structures-for-each-task)
+   - [3.4 Self-Discover: instruct the LLM to compose reasoning structures for each task](#self-discover-instruct-the-llm-to-compose-reasoning-structures-for-each-task)
 - [4. Summary](#summary)
 
 ## 1. Trigger the LLM to generate long chain-of-thought (CoT) 
