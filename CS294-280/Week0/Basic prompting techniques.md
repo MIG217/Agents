@@ -1,12 +1,14 @@
 # Basic prompting techniques
 
 **Catelog**
-1. [Trigger the LLM to generate long chain-of-thought (CoT)](#trigger-the-llm-to-generate-long-chain-of-thought-cot)
-2. [Chain-of-thought prompting](#chain-of-thought-prompting)
-3. [Basic prompting techniques](#basic-prompting-techniques)  
-   3.1 [Zero-shot CoT](#zero-shot-cot)  
-   3.2 LLM as the optimizer to iteratively improve the prompt 
-
+[1. Trigger the LLM to generate long chain-of-thought (CoT)](#trigger-the-llm-to-generate-long-chain-of-thought-cot)
+[2. Chain-of-thought prompting](#chain-of-thought-prompting)
+[3. Basic prompting techniques](#basic-prompting-techniques)  
+   [3.1 Zero-shot CoT](#zero-shot-cot)  
+   [3.2 LLM as the optimizer to iteratively improve the prompt](#llm-as-the-optimizer-to-iteratively-improve-the-prompt)
+   [3.3 Least-to-most prompting](#least-to-most-prompting)
+   [3.4 Self-Discover: instruct the LLM to compose reasoning structures for each task](#self-discover:-instruct-the-llm-to-compose-reasoning-structures-for-each-task)
+[4. Summary](#summary)
 
 ## 1. Trigger the LLM to generate long chain-of-thought (CoT) 
 - **Few-shot CoT prompting** 
@@ -25,7 +27,7 @@
 
 - We can explicitly instruct the LLM with the desired reasoning strategies for problem solving
 
-## Basic prompting techniques
+## 3. Basic prompting techniques
 Use **more token budget** to generate **a single solution**
 - **Standard prompting**
   - Before the advancement in post-training techniques, standard prompting performance is poor on reasoning benchmarks.
@@ -39,30 +41,30 @@ Use **more token budget** to generate **a single solution**
 - **Analogical prompting: instruct the LLM to generate exemplars**
 Prompt the LLM to **first recall relevant exemplars**, before solving the test problem.
 
-### Zero-shot CoT
+### 3.1 Zero-shot CoT
 - Weaker LLMs benefit less from analogical prompting, though it does not hurt the zero-shot performance
 - With stronger LLMs, analogical prompting outperforms CoT with manually-designed or retrieved exemplars
   - The generated CoT is more tailored to the underlying LLM
 <img width="831" alt="image" src="https://github.com/user-attachments/assets/12b558f5-ab52-45a4-a6c4-25ce15c9c02d" />
 
-### LLM as the optimizer to iteratively improve the prompt
+### 3.2 LLM as the optimizer to iteratively improve the prompt
 - Core idea: instruct the LLM to <mark>leverage the past optimization trajectory</mark>, represented as sorted (solution, score) pairs
 
 - Optimizer: the LLM to propose a new instruction given old ones and task exemplars
 - Evaluator: the LLM to evaluate the accuracy of an instruction
 <img width="680" alt="image" src="https://github.com/user-attachments/assets/dd220e53-c0f6-48d6-b488-9634534d3745" />
 
-### Least-to-most prompting
+### 3.3 Least-to-most prompting
 - SCAN 是一个用于评估组合泛化能力的基准，它模拟了如何通过有限的训练数据学习并推理新的指令组合
 <img width="905" alt="image" src="https://github.com/user-attachments/assets/7a3a5b58-92d1-4bff-a5eb-40829ecc96c4" />
 
 
-### Self-Discover: instruct the LLM to compose reasoning structures for each task
+### 3.4 Self-Discover: instruct the LLM to compose reasoning structures for each task
 - Different reasoning tasks require different reasoning structures, i.e., different ways to decompose the task and plan for each stage.
 - Self-Discover composes task-specific reasoning structures without manually-written demonstrations.
 <img width="868" alt="image" src="https://github.com/user-attachments/assets/babd381b-6ecd-4c3c-9e07-6c4e73a13711" />
 
-### <mark>Summary</mark>
+### <mark>4. Summary</mark>
 - Chain-of-thought generation: <mark>**variable computation**</mark> of the thought process adapting to tasks of differently levels
 
 - How to improve the CoT performance at inference time
