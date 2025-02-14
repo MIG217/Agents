@@ -1,4 +1,4 @@
-# Inference-Time Techniques for LLM Reasoning
+# Basic prompting techniques
 
 **Catelog**
 1. [Trigger the LLM to generate long chain-of-thought (CoT)](#trigger-the-llm-to-generate-long-chain-of-thought-cot)
@@ -57,18 +57,23 @@ Prompt the LLM to **first recall relevant exemplars**, before solving the test p
 <img width="905" alt="image" src="https://github.com/user-attachments/assets/7a3a5b58-92d1-4bff-a5eb-40829ecc96c4" />
 
 
+### Self-Discover: instruct the LLM to compose reasoning structures for each task
+- Different reasoning tasks require different reasoning structures, i.e., different ways to decompose the task and plan for each stage.
+- Self-Discover composes task-specific reasoning structures without manually-written demonstrations.
+<img width="868" alt="image" src="https://github.com/user-attachments/assets/babd381b-6ecd-4c3c-9e07-6c4e73a13711" />
 
-#### Example meta-prompt for GSM8K:
-<img width="810" alt="image" src="https://github.com/user-attachments/assets/a8977329-cc41-4561-a40b-31f9b8e7d866" />
+### <mark>Summary</mark>
+- Chain-of-thought generation: <mark>**variable computation**</mark> of the thought process adapting to tasks of differently levels
 
-#### Results on GSM8K
-- Initial instruction for prompt optimization: “Let’s solve the problem.” with acc = 60.8%.
-- Our best LLM-generated prompt outperforms “Let’s think step by step” by ~8%, matching the few-shot CoT accuracy (80.7%) in PaLM-2 technical report.
-<img width="890" alt="image" src="https://github.com/user-attachments/assets/3c4a8a93-73a4-4753-b357-79346349cc6f" />
-
-
-
-### 
+- How to improve the CoT performance at inference time
+  - Few-shot prompting with labeling of thoughts
+  - Instruction prompting to trigger CoT generation
+  - Instruct the LLM to automate the prompt design
+ 
+  - Note: the best prcatice to interact with LLMs evolves over time
+    - The principles of how to discover good prompting strategies for reasoning hold true
+      - Encourage longer CoT for complex tasks
+      - Support reasoning strategies required for the task
 
 ## 附：anthropic文章中给到的建议
 1. 给模型足够的 token 来“思考”，从而避免它进入死胡同；
@@ -86,7 +91,9 @@ Prompt the LLM to **first recall relevant exemplars**, before solving the test p
 ## 相关Paper
 > Large Language Models Are Human-Level Prompt Engineers： https://arxiv.org/abs/2211.01910
 > 
-> Large Language Models as Optimizers：https://arxiv.org/abs/2309.03409  
+> Large Language Models as Optimizers：https://arxiv.org/abs/2309.03409
+>
+> <mark>Self-Discover: Large Language Models Self-Compose Reasoning Structures https://arxiv.org/abs/2402.03620</mark>
 
 > Wei et al., Chain-of-Thought Prompting Elicits Reasoning in Large Language Models, NeurIPS 2022.
 > 
