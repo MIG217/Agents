@@ -9,7 +9,7 @@
    - 英文：https://www.anthropic.com/research/building-effective-agents
    - 文章中给的一些例子：https://github.com/anthropics/anthropic-cookbook/tree/main/patterns/agents
 3. Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond(Amazon, 2023)
-  - https://arxiv.org/abs/2304.13712
+   - https://arxiv.org/abs/2304.13712
 
 ## Blog
 1. Jason Brownlee创建，侧重机器学习、深度学习和DS；Python； https://machinelearningmastery.com/
