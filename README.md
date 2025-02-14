@@ -9,6 +9,7 @@
    - 英文：https://www.anthropic.com/research/building-effective-agents
    - 文章中给的一些例子：https://github.com/anthropics/anthropic-cookbook/tree/main/patterns/agents
 3. Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond(Amazon, 2023)
+   - summary: 大语言模型（LLMs）实用指南, 主要关注下游 NLP 任务中如何使用 LLM
    - paper: https://arxiv.org/abs/2304.13712
    - github: https://github.com/Mooler0410/LLMsPracticalGuide
 
