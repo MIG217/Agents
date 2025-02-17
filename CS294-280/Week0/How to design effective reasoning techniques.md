@@ -1,4 +1,7 @@
-# Basic prompting techniques
+# How to design effective reasoning techniques
+
+[CN] https://mp.weixin.qq.com/s/KOqATaijYwOOwJMvsCe4kg
+
 
 **Catelog**   
 1. [Trigger the LLM to generate long chain-of-thought (CoT)](#trigger-the-llm-to-generate-long-chain-of-thought-cot)
