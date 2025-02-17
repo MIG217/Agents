@@ -18,6 +18,7 @@
 2. Julia Silge创建，侧重R语言和tidyverse；https://juliasilge.com/
 3. Rob J. Hyndman 维护，侧重时间序列；https://robjhyndman.com/hyndsight/
 4. `caret` R 包的官方文档；https://topepo.github.io/caret/
+5. Richard S. Sutton：http://incompleteideas.net/
 
 ## Datasets
 1. GitHub 资源合集，收集了各类 公开可用的数据集；https://github.com/smuthubabu/awesome-public-datasets
