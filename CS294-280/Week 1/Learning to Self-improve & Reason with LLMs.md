@@ -90,9 +90,13 @@ Prompting 方法展示了通过精心设计的提示和引导, 我们可以显�
 我们真正想要的是，模型能够 *自主地* 进行推理，而不仅仅是依赖于巧妙设计的 Prompt。 因此，下一个研究浪潮，也是我们目前所处的阶段，就是**通过优化模型本身来实现自我提升，从而获得更强大的推理能力**。
 
 [1] Ouyang, Long, Jeff Wu, Xu Jiang, Diogo Almeida, Carroll L. Wainwright, and others. "Training Language Models to Follow Instructions with Human Feedback." arXiv, March 4, 2022.
+
 [2] Rafailov, Rafael, Archit Sharma, Eric Mitchell, Stefano Ermon, Christopher D. Manning, and Chelsea Finn. "Direct Preference Optimization: Your Language Model is Secretly a Reward Model." arXiv, July 29, 2024.
+
 [3] Dhuliawala, Shehzaad, Mojtaba Komeili, Jing Xu, Roberta Raileanu, Xian Li, Asli Celikiyilmaz, and Jason Weston. "Chain-of-Verification Reduces Hallucination in Large Language Models." arXiv, September 25, 2023. 
+
 [4] Weston, Jason, and Sainbayar Sukhbaatar. "System 2 Attention (Is Something You Might Need Too)." arXiv, November 20, 2023.
+
 [5] Saha, Swarnadeep, Omer Levy, Asli Celikiyilmaz, Mohit Bansal, Jason Weston, and Xian Li. "Branch-Solve-Merge Improves Large Language Model Evaluation and Generation." arXiv, June 7, 2024.
 
 
