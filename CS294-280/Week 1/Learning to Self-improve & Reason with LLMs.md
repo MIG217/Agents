@@ -66,12 +66,33 @@ CoVe 的核心思想是，让LLM不仅仅生成一个初步的答案（可以看
 
 研究表明，模型在处理简短的回答对时，通常比生成长篇回答更准确。通过规划和执行这些验证问题，LLM能够发现并纠正自身在初步答案中存在的矛盾和错误；在各类知识密集型任务中，采用CoVe方法可以将LLM回答的准确率显著提升（如图）：
 
-### 2.2 Chain-of-Verification (CoVe) 减少 LLM 中的幻觉
+### 2.2 System 2 Attention(S2A): 让注意力更专注
+由于 LLM 采用“软注意力”机制（而非“硬注意力”），导致模型易受“语义泄露”和“谄媚”问题的影响，即整个上下文（包括不相关信息）都会影响输出。为解决此问题，"System 2 Attention" 论文提出了 S2A 方法[4]，利用 CoT 推理**重写原始指令**，消除偏差。S2A 步骤（如图）：
+<img width="502" alt="image" src="https://github.com/user-attachments/assets/90583d60-3e60-4cf5-8bd8-325a6184ad70" />
 
+- 重写指令 (Rewrite Prompt): 提示 LLM 重写原始问题，去除其中的不相关信息或偏差；
+- 基于重写后的问题进行回答 (Answer with Rewritten Prompt): 使用重写后的问题再次输入 LLM，生成最终答案；
+
+CoT 和 System 2 推理的应用远不止于数学问题。通过利用这些中间 token 进行推理，模型可以在各种类型的任务中进行思考，并有效解决许多问题。
+
+### 2.3 Branch-Solve-Merge (BSM)：分解复杂任务
+当任务复杂、指令难以理解时，即使是像 GPT-4 这样强大的模型也会出错。BSM 就像“分而治之”的策略，将一个大问题拆解成几个小问题，逐个击破，最后再将结果整合起来。BSM 流程 (如图所示)：
+
+1.  **分支 (Branch):** 给定一个复杂任务，使用特定的 Prompt 让 LLM 生成一个计划，将任务分解为多个相互独立的子任务（分支）。
+2.  **解决 (Solve):** 针对每个分支，独立地解决其对应的子任务。每个分支的求解过程互不干扰。
+3.  **合并 (Merge):** 给定每个分支的部分解决方案，使用特定的 Prompt 让 LLM 将它们合并成最终的解决方案。合并过程不仅仅是简单的拼接，而是需要进行整合和优化。
+
+BSM 方法的核心思想是将复杂任务分解为多个子任务, 并行解决，再合并结果, 有效提升模型处理复杂任务的能力, 提高准确性、增强可控性。
+
+## 3. 通过自我提升实现更好的推理
+
+Prompting 方法展示了通过精心设计的提示和引导, 我们可以显著提升 LLM 在复杂任务上的表现。然而，这些方法仍然依赖于人工干预，需要为每个任务设计特定的 Prompt。 
+我们真正想要的是，模型能够 *自主地* 进行推理，而不仅仅是依赖于巧妙设计的 Prompt。 因此，下一个研究浪潮，也是我们目前所处的阶段，就是**通过优化模型本身来实现自我提升，从而获得更强大的推理能力**。
 
 [1] Ouyang, Long, Jeff Wu, Xu Jiang, Diogo Almeida, Carroll L. Wainwright, and others. "Training Language Models to Follow Instructions with Human Feedback." arXiv, March 4, 2022.
 [2] Rafailov, Rafael, Archit Sharma, Eric Mitchell, Stefano Ermon, Christopher D. Manning, and Chelsea Finn. "Direct Preference Optimization: Your Language Model is Secretly a Reward Model." arXiv, July 29, 2024.
 [3] Dhuliawala, Shehzaad, Mojtaba Komeili, Jing Xu, Roberta Raileanu, Xian Li, Asli Celikiyilmaz, and Jason Weston. "Chain-of-Verification Reduces Hallucination in Large Language Models." arXiv, September 25, 2023. 
 [4] Weston, Jason, and Sainbayar Sukhbaatar. "System 2 Attention (Is Something You Might Need Too)." arXiv, November 20, 2023.
+[5] Saha, Swarnadeep, Omer Levy, Asli Celikiyilmaz, Mohit Bansal, Jason Weston, and Xian Li. "Branch-Solve-Merge Improves Large Language Model Evaluation and Generation." arXiv, June 7, 2024.
 
 
