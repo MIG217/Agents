@@ -105,5 +105,36 @@ Parallelization 将一个任务分解为多个可以同时执行的子任务，�
 - 审查一段代码是否存在漏洞，其中多个不同的提示审查代码并在发现问题时标记。
 - 评估给定内容是否不适当，多个提示评估不同方面或需要不同的投票阈值来平衡误
 
+### 2.5 workflow: Orchestrator-Worker
+
+在Orchestrator-Worker一个中央 LLM 动态地分解任务，将它们委派给worker LLM，并综合它们的结果。
+
+![image](https://github.com/user-attachments/assets/e2799222-d680-4e45-b487-e92cab8403a8)
+
+**合适使用此工作流：** 此工作流非常适合您无法预测所需子任务的复杂任务（例如，在编码中，需要更改的文件数量和每个文件中更改的性质可能取决于任务）。虽然它在拓扑上与Parallelization 相似，但关键区别在于它的灵活性——子任务不是预定义的，而是由编排器根据特定输入确定的。
+
+**Orchestrator-Worker适用的示例：**
+
+- 代码生成/修改： 需要对多个文件进行复杂更改的软件开发项目。
+- 复杂信息检索与分析： 需要从多个来源收集和分析信息，并从中提取相关信息的搜索任务。
+
+### 2.6 workflow: Evaluator-optimizer
+
+Evaluator-optimizer工作流采用了一种迭代优化的策略。它包含两个关键的 LLM 角色：
+- Generator: 一个 LLM 负责生成初步的响应或解决方案。
+- Evaluator: 另一个 LLM 负责评估生成器生成的响应，并提供具体的、可操作的反馈意见。
+
+![image](https://github.com/user-attachments/assets/e62b0a36-f49f-497a-a7e5-670b895b6031)
+
+**何时使用此工作流：** 当我们有明确的评估标准，并且当迭代改进提供可衡量价值时，此工作流特别有效。 良好适应的两个标志是，首先，当人类表达他们的反馈时，LLM 响应可以得到明显改进；其次，LLM 可以提供此类反馈。 这类似于人类作家在制作精美文档时可能经历的迭代写作过程。
+
+**Evaluator-optimizer适用的示例：**
+
+- 文学翻译，其中存在翻译器 LLM 最初可能无法捕捉到的细微差别，但评估器 LLM 可以提供有用的评论。
+- 复杂的搜索任务，需要多轮搜索和分析才能收集全面的信息，评估器决定是否需要进一步搜索。
+
+### 2.7 Agents
+
+![image](https://github.com/user-attachments/assets/1e6b3337-be5e-4b48-8fb4-191737945a9c)
 
 
