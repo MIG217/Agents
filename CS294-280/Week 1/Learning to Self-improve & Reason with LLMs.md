@@ -79,14 +79,19 @@ CoT 和 System 2 推理的应用远不止于数学问题。通过利用这些中
 2.  **解决 (Solve):** 针对每个分支，独立地解决其对应的子任务。每个分支的求解过程互不干扰。
 3.  **合并 (Merge):** 给定每个分支的部分解决方案，使用特定的 Prompt 让 LLM 将它们合并成最终的解决方案。合并过程不仅仅是简单的拼接，而是需要进行整合和优化。
 
-BSM 方法的核心思想是将复杂任务分解为多个子任务, 并行解决，再合并结果, 有效提升模型处理复杂任务的能力, 提高准确性、增强可控性。
-
-## 3. 通过自我提升实现更好的推理
-
 Prompting 方法展示了通过精心设计的提示和引导, 我们可以显著提升 LLM 在复杂任务上的表现。然而，这些方法仍然依赖于人工干预，需要为每个任务设计特定的 Prompt。 
 我们真正想要的是，模型能够 *自主地* 进行推理，而不仅仅是依赖于巧妙设计的 Prompt。 因此，下一个研究浪潮，也是我们目前所处的阶段，就是**通过优化模型本身来实现自我提升，从而获得更强大的推理能力**。
 
+## 3. 通过自我提升实现更好的推理
 
+传统机器学习 (ML) 中，人类监督的是比自己能力弱的 AI 系统（左）。然而，要实现超级智能的对齐，人类将需要监督比自己更强大的 AI 系统（中）[6]。How can we continue improving superhuman models?
+
+### 3.1 Self-Rewarding LLMs
+
+There’s two observations that can help us to solve this. Observation 1 is LLMs can countinue improving if provided good judgements on response quality[7][8]. Observation 2 is LLMs can provide good judgements on model generation[9][10].
+
+
+参考文献：
 
 [1] Ouyang, Long, Jeff Wu, Xu Jiang, Diogo Almeida, Carroll L. Wainwright, and others. "Training Language Models to Follow Instructions with Human Feedback." arXiv, March 4, 2022.
 
@@ -98,4 +103,15 @@ Prompting 方法展示了通过精心设计的提示和引导, 我们可以显�
 
 [5] Saha, Swarnadeep, Omer Levy, Asli Celikiyilmaz, Mohit Bansal, Jason Weston, and Xian Li. "Branch-Solve-Merge Improves Large Language Model Evaluation and Generation." arXiv, June 7, 2024.
 
+[6] Burns, Collin, Pavel Izmailov, Jan Hendrik Kirchner, Bowen Baker, Leo Gao, Leopold Aschenbrenner, Yining Chen, Adrien Ecoffet, Manas Joglekar, Jan Leike, Ilya Sutskever, and Jeff Wu. "Weak-to-Strong Generalization: Eliciting Strong Capabilities With Weak Supervision." arXiv, December 14, 2023.
+
+[7] Bai, Yuntao, Andy Jones, Kamal Ndousse, Amanda Askell, Anna Chen, and others. "Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback." *arXiv*, April 12, 2022.
+
+[8] Touvron, Hugo, Louis Martin, Kevin Stone, Peter Albert, Amjad Almahairi, and others. "Llama 2: Open Foundation and Fine-Tuned Chat Models." *arXiv*, July 19, 2023.
+
+[9] Zheng, Lianmin, Wei-Lin Chiang, Ying Sheng, Siyuan Zhuang, Zhanghao Wu, and others. "Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena." *arXiv*, December 24, 2023.
+
+[10] Dubois, Yann, Xuechen Li, Rohan Taori, Tianyi Zhang, Ishaan Gulrajani, and others. "AlpacaFarm: A Simulation Framework for Methods that Learn from Human Feedback." *arXiv*, January 8, 2024.
+
+[11] Yuan, Weizhe, Richard Yuanzhe Pang, Kyunghyun Cho, Xian Li, Sainbayar Sukhbaatar, Jing Xu, and Jason Weston. "Self-Rewarding Language Models." *arXiv*, February 8, 2024.
 
