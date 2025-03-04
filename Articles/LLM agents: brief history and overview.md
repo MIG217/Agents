@@ -22,6 +22,8 @@ In AI, an agent is an **"intelligent"** system that interacts with an **"environ
 - **Digital environments**: DQN for Atari games, Siri, AlphaGo
 - **Humans as environments**: Chatbots
 
+<img width="263" alt="image" src="https://github.com/user-attachments/assets/6bb3c390-9c0f-4e24-903d-6731a14c3d8b" />
+
 To properly define an "agent," we must first establish what constitutes "intelligence" and what comprises an "environment.
 
 - The concept of intelligence in AI is not static but dynamic!
