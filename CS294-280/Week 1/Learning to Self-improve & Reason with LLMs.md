@@ -1,7 +1,7 @@
 
 # 大语言模型的自我提升与推理能力进化 
 
-[CN]: https://mp.weixin.qq.com/s/o3_bNj3sjG-Co5cPlNhxPg
+[CN]  https://mp.weixin.qq.com/s/o3_bNj3sjG-Co5cPlNhxPg
 
 AI 能力正在快速发展，如 O1、R1 等模型在推理基准测试中取得的突破性进展。本文将聚焦于模型的自我提升能力(self-improvement)。
 为了更好地理解AI的推理机制，我们首先需要区分两种基本的思维模式：System 1和 System 2：
