@@ -24,14 +24,41 @@ In AI, an agent is an **"intelligent"** system that interacts with an **"environ
 
 <img width="263" alt="image" src="https://github.com/user-attachments/assets/6bb3c390-9c0f-4e24-903d-6731a14c3d8b" />
 
-To properly define an "agent," we must first establish what constitutes "intelligence" and what comprises an "environment.
-
-- The concept of intelligence in AI is not static but dynamic!
-- Exercise question: How would you define "intelligence"?
-
 ### 1.2 What is LLM agent?
 
-## 2. A brief history of LLM Agent
+Now that we understand what an agent is, let's explore the concept of an LLM agent.
+
+LLM agents can be categorized into three distinct levels of sophistication:
+
+<img width="518" alt="image" src="https://github.com/user-attachments/assets/aebe8565-0cc0-40ea-8a47-c41e8e25071c" />
+
+Level 1: Text Agent
+- Basic agents that process and respond to text input
+- Examples: ELIZE, LSTM-DQN
+
+Level 2: LLM Agent
+- Advanced agents that leverage LLMs for direct action generation
+- Examples: SayCan, Language Planner
+
+Level 3: Reasoning Agent
+- Use LLM to reason to act
+- Examples: ReAct, AutoGPT
+
+## 2. A Brief History of LLM Agents
+
+### 2.1 ELIZA (1966): The Pioneer of Text Agents
+
+The development of text-based agents dates back to the early days of AI. ELIZA, created in 1966, marked a significant milestone as one of the first chatbots. 
+
+It's simple yet effective rule-based approach involved pattern matching and response templates to simulate human conversation. While users found ELIZA remarkably engaging, the system had inherent limitions:
+
+- Limited to specific domains and use cases
+- Require a extensive manual rule creation
+- Unable to handle complex interactions or understanding
+
+![image](https://github.com/user-attachments/assets/3c267a3c-c7a7-47f1-8b61-bbef70ca7958)
+
+
 
 ### 2.1 ReAct
 
