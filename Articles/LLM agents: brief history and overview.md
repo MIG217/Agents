@@ -58,7 +58,15 @@ It's simple yet effective rule-based approach involved pattern matching and resp
 
 ![image](https://github.com/user-attachments/assets/3c267a3c-c7a7-47f1-8b61-bbef70ca7958)
 
+### 2.2 LSTM-DQN (2015): RL for Text Agents
 
+Prior to the emergence of LLMs, RL was a dominant approach for developing text-based agents. This methodology treated text as both the observation and action space, similar to how traditional RL handles pixels and keyboard inputs in video games. The core idea was that optimizing for reward signals would natually lead emergence of language intelligence.
+
+However, this approach faced several significant limitions:
+
+- Domain-specific applications
+- Dependence on explicit scalar reward signals
+- Requires extensive training 
 
 ### 2.1 ReAct
 
