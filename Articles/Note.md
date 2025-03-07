@@ -41,5 +41,7 @@ https://en.wikipedia.org/wiki/Long-term_memory
 Reasoning help diagnose and control acting.
 
 
+1. CoT是需要呈现给使用者的东西，在一定程度上优化了模型的幻觉、准确性等问题；
+2. 对于开发者、orchestrator来说，更鼓励使用非推理模型，会更清楚你想要呈现的业务逻辑，同时也可以帮自己理清思路
 
 
