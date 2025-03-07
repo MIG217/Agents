@@ -1,3 +1,13 @@
+### When (and when not) to use agents
+
+When building applications with LLMs, we recommend finding the simplest solution possible, and only increasing complexity when needed. 
+
+This might mean <mark>not building agentic systems at all. Agentic systems often trade latency and cost for better task performance, and you should consider when this tradeoff makes sense.</mark>
+
+When more complexity is warranted, workflows offer predictability and consistency for well-defined tasks, whereas agents are the better option when flexibility and model-driven decision-making are needed at scale. 
+
+For many applications, however, optimizing single LLM calls with retrieval and in-context examples is usually enough.
+
 ### What about retrieval and RAG?
 
 - We can think of the retriveal corpus as "read-only" LTM (Long Term Memory)
