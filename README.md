@@ -20,6 +20,7 @@
 4. `caret` R 包的官方文档；https://topepo.github.io/caret/
 5. Richard S. Sutton：http://incompleteideas.net/
 6. Shunyu Yao，CoALA和ReAct的论文 也很值得看 https://ysymyth.github.io/
+7. https://lilianweng.github.io/
 
 ## Datasets
 1. GitHub 资源合集，收集了各类 公开可用的数据集；https://github.com/smuthubabu/awesome-public-datasets
