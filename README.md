@@ -19,6 +19,7 @@
 3. Rob J. Hyndman 维护，侧重时间序列；https://robjhyndman.com/hyndsight/
 4. `caret` R 包的官方文档；https://topepo.github.io/caret/
 5. Richard S. Sutton：http://incompleteideas.net/
+6. Shunyu Yao，CoALA和ReAct的论文 也很值得看 https://ysymyth.github.io/
 
 ## Datasets
 1. GitHub 资源合集，收集了各类 公开可用的数据集；https://github.com/smuthubabu/awesome-public-datasets
@@ -28,30 +29,16 @@
 
 ## Agent平台
 1. Dify: https://cloud.dify.ai/apps
-2. Microsoft Copilot Studio: https://copilotstudio.microsoft.com/
-3. IBM watsonx.ai https://www.ibm.com/products/watsonx-ai/ai-agent-development
-4. FastGPT https://cloud.tryfastgpt.ai/app/list
-5. coze 
+2. AutoGen 更适合multi-agent
+3. Langchain 
+4. IBM watsonx.ai https://www.ibm.com/products/watsonx-ai/ai-agent-development
+5. FastGPT https://cloud.tryfastgpt.ai/app/list
+6. coze 
 
 ## Mooc
 1. UC Berkeley CS294/194-196 Large Language Model Agents： [CS294/194-196 Large Language Model Agents](https://rdi.berkeley.edu/llm-agents/f24)
 2. UC Berkeley CS294/194-280 Advanced Large Language Model Agents: https://rdi.berkeley.edu/adv-llm-agents/sp25
 3. DeepLearning.AI Multi AI Agent Systems with crewAI: https://learn.deeplearning.ai/courses/multi-ai-agent-systems-with-crewai
-
-## Agent应用
-1. Google (看不到编排)
-
-   **Data Science Agent:**
-   - An experiment to build an AI generated Colab notebook that handles data cleaning, data exploration, plotting, Q&A on data, and predictive modeling.
-   - https://labs.google.com/code/dsa
-
-   **Transformation Agent:**
-   - An experimental model capability to edit existing Python code, taking as input code context with a text prompt, and turning it into a code diff.
-   - https://labs.google.com/code/transformer
-
-   **Jules:**  
-   - An experimental AI coding agent that works asynchronously. Jules breaks down tasks and writes code that can be merged directly into your GitHub repo.
-   - https://labs.google.com/jules/
 
 ## Prompt Engineering 
 1. [OpenAI Cookbook](https://github.com/openai/openai-cookbook)有许多关于如何有效利用 LLM 的深入示例。
