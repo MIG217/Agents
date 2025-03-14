@@ -1,6 +1,6 @@
 # How to design effective reasoning techniques
 
-[CN] https://mp.weixin.qq.com/s/KOqATaijYwOOwJMvsCe4kg
+[ZH] https://mp.weixin.qq.com/s/KOqATaijYwOOwJMvsCe4kg
 
 
 **Catelog**   
