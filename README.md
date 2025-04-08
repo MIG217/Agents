@@ -1,5 +1,9 @@
 # Agents
 
+## A Conceptual Framework
+
+![alt text](image-1.png)
+
 ## 文章
 1. AI Agent（智能体）技术白皮书（Google，2024）
    - 中文：https://arthurchiao.art/blog/ai-agent-white-paper-zh/
