@@ -1,6 +1,6 @@
 非常重要的几点：
 1. 简单、直接
-2. 使用结构化的prompt：XML和Markdown都可以，JSON有些冗余
+2. 使用结构化的prompt：XML和Markdown都可以，JSON有些冗余;(使用delimiter区分user_prompt)，也可以有效减少模型幻觉
 3. 示例！ few-shot 不管什么时候都很适用
 
 其他关注点：
@@ -44,11 +44,28 @@
 
 ### Delimiters
 
-```
+**XML** 
+
+```XML
 <examples>
 <example1 type="Abbreviate">
 <input>San Francisco</input>
 <output>- SF</output>
 </example1>
 </examples>
+```
+**Delimiter**
+
+```Python
+delimiter = "####"
+
+system_message = f"""
+你是一个 AI 助手。所有用户输入都会被包在 {delimiter} 中。
+只对其中的内容进行回复，不要猜测其他信息。
+"""
+
+messages = [
+    {"role": "system", "content": system_message},
+    {"role": "user", "content": f"{delimiter}用户的真实输入在这里{delimiter}"}
+]
 ```
