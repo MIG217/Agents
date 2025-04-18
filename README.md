@@ -18,10 +18,11 @@
    - github: https://github.com/Mooler0410/LLMsPracticalGuide
   
 ## Relevant agent workshops and talks
-- ![ICLR Workshop on LLM Agents](https://iclr.cc/virtual/2024/workshop/20575)
-- ![Trustworthy Multi-modal Foundation Models and AI Agents (TiFA)](https://icml.cc/virtual/2024/workshop/29951)
-- ![Multi-modal Foundation Model meets Embodied AI ICML](https://icml.cc/virtual/2024/workshop/29957)
-- ![NeurIPS 2024 Workshop on Open-World Agents](https://neurips.cc/virtual/2024/workshop/84729), Towards Safe & Trustworthy Agents
+- ICLR Workshop on LLM Agents: https://iclr.cc/virtual/2024/workshop/20575
+- Trustworthy Multi-modal Foundation Models and AI Agents (TiFA): https://icml.cc/virtual/2024/workshop/29951
+- Multi-modal Foundation Model meets Embodied AI ICML: https://icml.cc/virtual/2024/workshop/29957
+- NeurIPS 2024 Workshop on Open-World Agents, Towards Safe & Trustworthy Agents
+   - https://neurips.cc/virtual/2024/workshop/84729
 - Princeton PLI Workshop on Useful and Reliable AI Agents
 - CMU Agent Workshop 2024
 - CoRL 2024 Workshop on Language and Robot Learning
