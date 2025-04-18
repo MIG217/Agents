@@ -1,4 +1,7 @@
 # Agents
+## Relevant agent workshops and talks
+- ICLR Workshop on LLM Agents
+-    
 
 ## A Conceptual Framework
 
