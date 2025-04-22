@@ -1,4 +1,4 @@
-## 🧠 Long-Term Memory (LTM)
+## Long-Term Memory (LTM)
 
 Long-term memory stores information for hours, days, years, or even a lifetime. It is typically divided into two main branches:
 
@@ -34,13 +34,13 @@ Skills and habits, like riding a bike or typing.
 |Procedural|	Implicit|	Knowing how to swim|
 
 
-## 🧠 What is Sensory Memory?
+## Sensory Memory
 
 Sensory memory is the ultra-short-term memory system that stores raw sensory input (like sights, sounds, smells) for just a fraction of a second to a few seconds.
 
 It’s like your brain’s “buffer zone” for quickly processing input before deciding whether to pass it into short-term memory.
 
-### 🧩 Types of Sensory Memory:
+### 🧩 Types of Sensory Memory
 
 |Type	| Sense| 	Duration|	Example|
 |---|---|---|---|
@@ -50,7 +50,8 @@ It’s like your brain’s “buffer zone” for quickly processing input before
 
 There are also less-researched types for smell (olfactory) and taste (gustatory).
 
-### 🔄 Flow of Memory Stages:
+### 🔄 Flow of Memory Stages
+
 1. Sensory Memory →
 2. If attention is given: Short-Term / Working Memory →
 3. If rehearsed and encoded: Long-Term Memory
