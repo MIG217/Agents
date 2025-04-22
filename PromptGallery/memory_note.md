@@ -1,3 +1,6 @@
+# Human Memory 
+![image](https://github.com/user-attachments/assets/fe199fed-b7cc-4283-8eeb-3966674b796d)
+
 ## Long-Term Memory (LTM)
 
 Long-term memory stores information for hours, days, years, or even a lifetime. It is typically divided into two main branches:
@@ -66,5 +69,5 @@ Imagine walking into a room and hearing music. You instantly recognize it — th
 wikipedia: https://en.wikipedia.org/wiki/Long-term_memory
 
 University of Basel: https://tales.nmc.unibas.ch/de/learning-and-memory-23/introduction-2-124/overview-of-the-human-memory-systems-836
-![image](https://github.com/user-attachments/assets/fe199fed-b7cc-4283-8eeb-3966674b796d)
+
 
